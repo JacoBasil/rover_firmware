@@ -1,0 +1,4 @@
+MOTOR_1 7500  tick/rot
+MOTOR_2 9840  tick/rot
+MOTOR_3 7450  tick/rot
+MOTOR_4 9810  tick/rot

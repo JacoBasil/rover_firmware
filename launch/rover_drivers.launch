@@ -1,0 +1,13 @@
+<launch>
+
+	#node name="encoders" pkg="firmware" type="encoders" output="screen" />
+	#node name="dc_motors" pkg="firmware" type="dc_motors" output="screen" />
+	
+	#include file="$(find firmware)/launch/abot_lidar.launch" />
+	
+	<node pkg="rosserial_python" type="serial_node.py" name="arduino_serial" output="screen">
+    	<param name="port" value="/dev/ttyACM0"/>
+    	<param name="baud" value="250000"/>
+  	</node>
+	<include file="$(find firmware)/launch/rover_pid.launch" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/jetson/rover_ws/src/firmware/build/devel
+
+Name: abot_driver
+Description: Description of abot_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

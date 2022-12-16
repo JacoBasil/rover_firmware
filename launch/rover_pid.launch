@@ -1,0 +1,62 @@
+<launch>
+    <node name="controller" pkg="pid" type="controller" ns="/rover/front_left_wheel" output="screen" >
+        <param name="node_name" value="front_left_wheel_pid" />
+        <param name="Kp" value="6.2" />
+        <param name="Ki" value="0.0" />
+        <param name="Kd" value="0.025" />
+        <param name="upper_limit" value="10.23" />
+        <param name="lower_limit" value="-10.23" />
+        <param name="windup_limit" value="10.23" />
+        <param name="max_loop_frequency" value="100.0" />
+        <param name="min_loop_frequency" value="100.0" />
+        <remap from="/rover/front_left_wheel/setpoint" to="/rover/front_left_wheel/target_velocity" />
+        <remap from="/rover/front_left_wheel/state" to="/rover/front_left_wheel/current_velocity" />
+        <remap from="/rover/front_left_wheel/control_effort" to="/rover/front_left_wheel/pwm" />
+    </node>
+
+    <node name="controller" pkg="pid" type="controller" ns="/rover/front_right_wheel" output="screen" >
+        <param name="node_name" value="front_right_wheel_pid" />
+        <param name="Kp" value="6.0" />
+        <param name="Ki" value="0.0" />
+        <param name="Kd" value="0.025" />
+        <param name="upper_limit" value="10.23" />
+        <param name="lower_limit" value="-10.23" />
+        <param name="windup_limit" value="10.23" />
+        <param name="max_loop_frequency" value="100.0" />
+        <param name="min_loop_frequency" value="100.0" />
+        <remap from="/rover/front_right_wheel/setpoint" to="/rover/front_right_wheel/target_velocity" />
+        <remap from="/rover/front_right_wheel/state" to="/rover/front_right_wheel/current_velocity" />
+        <remap from="/rover/front_right_wheel/control_effort" to="/rover/front_right_wheel/pwm" />
+    </node>
+
+    <node name="controller" pkg="pid" type="controller" ns="/rover/rear_left_wheel" output="screen" >
+        <param name="node_name" value="rear_left_wheel_pid" />
+        <param name="Kp" value="6.2" />
+        <param name="Ki" value="0.0" />
+        <param name="Kd" value="0.025" />
+        <param name="upper_limit" value="10.23" />
+        <param name="lower_limit" value="-10.23" />
+        <param name="windup_limit" value="10.23" />
+        <param name="max_loop_frequency" value="100.0" />
+        <param name="min_loop_frequency" value="100.0" />
+        <remap from="/rover/rear_left_wheel/setpoint" to="/rover/rear_left_wheel/target_velocity" />
+        <remap from="/rover/rear_left_wheel/state" to="/rover/rear_left_wheel/current_velocity" />
+        <remap from="/rover/rear_left_wheel/control_effort" to="/rover/rear_left_wheel/pwm" />
+    </node>
+
+    <node name="controller" pkg="pid" type="controller" ns="/rover/rear_right_wheel" output="screen" >
+        <param name="node_name" value="rear_right_wheel_pid" />
+        <param name="Kp" value="6.0" />
+        <param name="Ki" value="0.0" />
+        <param name="Kd" value="0.025" />
+        <param name="upper_limit" value="10.23" />
+        <param name="lower_limit" value="-10.23" />
+        <param name="windup_limit" value="10.23" />
+        <param name="max_loop_frequency" value="100.0" />
+        <param name="min_loop_frequency" value="100.0" />
+        <remap from="/rover/rear_right_wheel/setpoint" to="/rover/rear_right_wheel/target_velocity" />
+        <remap from="/rover/rear_right_wheel/state" to="/rover/rear_right_wheel/current_velocity" />
+        <remap from="/rover/rear_right_wheel/control_effort" to="/rover/rear_right_wheel/pwm" />
+    </node>
+    
+</launch>
