@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="rosserial_python" type="serial_node.py" name="arduino_serial" output="screen">
+    	<param name="port" value="/dev/ttyACM1"/>
+    	<param name="baud" value="1000000"/>
+  	</node>
+	<include file="$(find rover_firmware)/launch/rover_pid.launch" />
+	<include file="$(find rover_firmware)/launch/rover_lidar.launch" />
+</launch>
