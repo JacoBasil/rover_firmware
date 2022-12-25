@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/rover_ws/src/firmware
+CMAKE_SOURCE_DIR = /home/jetson/rover_ws/src/rover_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/rover_ws/src/firmware/build
+CMAKE_BINARY_DIR = /home/jetson/rover_ws/src/rover_firmware/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/encoders.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/encoders.dir/flags.make
 
 CMakeFiles/encoders.dir/encoders/encoders.cpp.o: CMakeFiles/encoders.dir/flags.make
 CMakeFiles/encoders.dir/encoders/encoders.cpp.o: ../encoders/encoders.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/rover_ws/src/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/encoders.dir/encoders/encoders.cpp.o"
-	/usr/bin/aarch64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/encoders.dir/encoders/encoders.cpp.o -c /home/jetson/rover_ws/src/firmware/encoders/encoders.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jetson/rover_ws/src/rover_firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/encoders.dir/encoders/encoders.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/encoders.dir/encoders/encoders.cpp.o -c /home/jetson/rover_ws/src/rover_firmware/encoders/encoders.cpp
 
 CMakeFiles/encoders.dir/encoders/encoders.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/encoders.dir/encoders/encoders.cpp.i"
-	/usr/bin/aarch64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson/rover_ws/src/firmware/encoders/encoders.cpp > CMakeFiles/encoders.dir/encoders/encoders.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jetson/rover_ws/src/rover_firmware/encoders/encoders.cpp > CMakeFiles/encoders.dir/encoders/encoders.cpp.i
 
 CMakeFiles/encoders.dir/encoders/encoders.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/encoders.dir/encoders/encoders.cpp.s"
-	/usr/bin/aarch64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson/rover_ws/src/firmware/encoders/encoders.cpp -o CMakeFiles/encoders.dir/encoders/encoders.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jetson/rover_ws/src/rover_firmware/encoders/encoders.cpp -o CMakeFiles/encoders.dir/encoders/encoders.cpp.s
 
 # Object files for target encoders
 encoders_OBJECTS = \
@@ -77,32 +77,32 @@ encoders_OBJECTS = \
 # External object files for target encoders
 encoders_EXTERNAL_OBJECTS =
 
-devel/lib/firmware/encoders: CMakeFiles/encoders.dir/encoders/encoders.cpp.o
-devel/lib/firmware/encoders: CMakeFiles/encoders.dir/build.make
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/libroscpp.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libpthread.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/librosconsole.so
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/libxmlrpcpp.so
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/libroscpp_serialization.so
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/librostime.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
-devel/lib/firmware/encoders: /opt/ros/noetic/lib/libcpp_common.so
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
-devel/lib/firmware/encoders: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
-devel/lib/firmware/encoders: /usr/local/lib/libJetsonGPIO.so.1.2.3
-devel/lib/firmware/encoders: CMakeFiles/encoders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jetson/rover_ws/src/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/firmware/encoders"
+devel/lib/rover_firmware/encoders: CMakeFiles/encoders.dir/encoders/encoders.cpp.o
+devel/lib/rover_firmware/encoders: CMakeFiles/encoders.dir/build.make
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/libroscpp.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libpthread.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/librosconsole.so
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/libxmlrpcpp.so
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/libroscpp_serialization.so
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/librostime.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
+devel/lib/rover_firmware/encoders: /opt/ros/noetic/lib/libcpp_common.so
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+devel/lib/rover_firmware/encoders: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+devel/lib/rover_firmware/encoders: /usr/local/lib/libJetsonGPIO.so.1.2.3
+devel/lib/rover_firmware/encoders: CMakeFiles/encoders.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jetson/rover_ws/src/rover_firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable devel/lib/rover_firmware/encoders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/encoders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/encoders.dir/build: devel/lib/firmware/encoders
+CMakeFiles/encoders.dir/build: devel/lib/rover_firmware/encoders
 
 .PHONY : CMakeFiles/encoders.dir/build
 
@@ -111,6 +111,6 @@ CMakeFiles/encoders.dir/clean:
 .PHONY : CMakeFiles/encoders.dir/clean
 
 CMakeFiles/encoders.dir/depend:
-	cd /home/jetson/rover_ws/src/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/rover_ws/src/firmware /home/jetson/rover_ws/src/firmware /home/jetson/rover_ws/src/firmware/build /home/jetson/rover_ws/src/firmware/build /home/jetson/rover_ws/src/firmware/build/CMakeFiles/encoders.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jetson/rover_ws/src/rover_firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/rover_ws/src/rover_firmware /home/jetson/rover_ws/src/rover_firmware /home/jetson/rover_ws/src/rover_firmware/build /home/jetson/rover_ws/src/rover_firmware/build /home/jetson/rover_ws/src/rover_firmware/build/CMakeFiles/encoders.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/encoders.dir/depend
 

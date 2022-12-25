@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jetson/rover_ws/src/firmware/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/jetson/rover_ws/src/rover_firmware/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

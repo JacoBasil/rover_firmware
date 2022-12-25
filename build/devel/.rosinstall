@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/jetson/rover_ws/src/firmware/build/devel/setup.sh
+    local-name: /home/jetson/rover_ws/src/rover_firmware/build/devel/setup.sh

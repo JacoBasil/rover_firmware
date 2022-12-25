@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.1)
-project(firmware)
+project(rover_firmware)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp

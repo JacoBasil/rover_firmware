@@ -3,6 +3,6 @@ CATKIN_PACKAGE_PREFIX = ""
 PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
-PROJECT_NAME = "firmware"
-PROJECT_SPACE_DIR = "/home/jetson/rover_ws/src/firmware/build/devel"
+PROJECT_NAME = "rover_firmware"
+PROJECT_SPACE_DIR = "/home/jetson/rover_ws/src/rover_firmware/build/devel"
 PROJECT_VERSION = "0.0.0"

@@ -6,6 +6,24 @@
 #include <ros.h>
 
 #define MAX_PWM_VALUE 1023
+const int16_t PWM_cutoff = 0;
+
+//motor PINS
+#define MOTOR_1_PWM 9
+#define MOTOR_1_DIR 27
+#define MOTOR_1_SLP 23
+
+#define MOTOR_2_PWM 8
+#define MOTOR_2_DIR 28
+#define MOTOR_2_SLP 25
+
+#define MOTOR_3_PWM 7
+#define MOTOR_3_DIR 26
+#define MOTOR_3_SLP 31
+
+#define MOTOR_4_PWM 6
+#define MOTOR_4_DIR 29
+#define MOTOR_4_SLP 33
 
 class DCMotor {
 public:

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jetson/rover_ws/src/firmware/encoders/encoders.cpp" "/home/jetson/rover_ws/src/firmware/build/CMakeFiles/encoders.dir/encoders/encoders.cpp.o"
+  "/home/jetson/rover_ws/src/rover_firmware/encoders/encoders.cpp" "/home/jetson/rover_ws/src/rover_firmware/build/CMakeFiles/encoders.dir/encoders/encoders.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"firmware\""
+  "ROS_PACKAGE_NAME=\"rover_firmware\""
   )
 
 # The include file search paths:

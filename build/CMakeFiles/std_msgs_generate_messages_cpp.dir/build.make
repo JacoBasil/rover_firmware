@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jetson/rover_ws/src/firmware
+CMAKE_SOURCE_DIR = /home/jetson/rover_ws/src/rover_firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jetson/rover_ws/src/firmware/build
+CMAKE_BINARY_DIR = /home/jetson/rover_ws/src/rover_firmware/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -67,6 +67,6 @@ CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/jetson/rover_ws/src/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/rover_ws/src/firmware /home/jetson/rover_ws/src/firmware /home/jetson/rover_ws/src/firmware/build /home/jetson/rover_ws/src/firmware/build /home/jetson/rover_ws/src/firmware/build/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jetson/rover_ws/src/rover_firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jetson/rover_ws/src/rover_firmware /home/jetson/rover_ws/src/rover_firmware /home/jetson/rover_ws/src/rover_firmware/build /home/jetson/rover_ws/src/rover_firmware/build /home/jetson/rover_ws/src/rover_firmware/build/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 
